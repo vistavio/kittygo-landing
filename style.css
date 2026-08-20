@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: #FAFAF8;
+  color: #1C1C1A;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 64px 24px 48px;
+  background: #FAFAF8;
+}
+
+.hero-icon {
+  width: 96px;
+  height: 96px;
+  border-radius: 24px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 16px rgba(139, 115, 85, 0.25);
+}
+
+.hero h1 {
+  font-size: 40px;
+  color: #8B7355;
+  margin-bottom: 8px;
+}
+
+.hero p.slogan {
+  font-size: 18px;
+  color: #666663;
+  margin-bottom: 32px;
+}
+
+.btn-download {
+  display: inline-block;
+  background: #8B7355;
+  color: #FFFFFF;
+  font-size: 17px;
+  font-weight: 600;
+  padding: 16px 40px;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.btn-download:hover {
+  background: #FF8C42;
+}
+
+/* Features */
+.features {
+  padding: 32px 24px 64px;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  padding: 40px 0;
+  border-bottom: 1px solid #EFEFED;
+}
+
+.feature:last-child {
+  border-bottom: none;
+}
+
+.feature:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.feature-text {
+  flex: 1;
+}
+
+.feature-text .emoji {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.feature-text h2 {
+  font-size: 24px;
+  color: #1C1C1A;
+  margin-bottom: 8px;
+}
+
+.feature-text p {
+  font-size: 15px;
+  color: #666663;
+}
+
+.screenshot-placeholder {
+  flex: 1;
+  aspect-ratio: 9 / 19.5;
+  max-width: 220px;
+  margin: 0 auto;
+  background: #EFEFED;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #999996;
+  font-size: 13px;
+  padding: 16px;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 48px 24px 64px;
+  background: #FFFFFF;
+  border-top: 1px solid #EFEFED;
+}
+
+.footer .btn-download {
+  margin-bottom: 24px;
+}
+
+.footer p {
+  font-size: 13px;
+  color: #666663;
+}
+
+.footer a {
+  color: #8B7355;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .feature,
+  .feature:nth-child(even) {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .screenshot-placeholder {
+    max-width: 160px;
+  }
+}
