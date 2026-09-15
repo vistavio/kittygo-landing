@@ -3,273 +3,146 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KittyGo – Tüm Özellikler ve Kullanım Kılavuzu</title>
-  <meta name="description" content="KittyGo'nun tüm özelliklerini, gezi planlamadan harcama bölüşümüne, gözlemci üyelere kadar detaylı olarak keşfedin.">
+  <title>KittyGo – Birlikte Gezmenin En Kolay Hali</title>
+  <meta name="description" content="Gezi planınızdan harcama bölüşümüne, tavsiyelerden gözlemci üyelere kadar — KittyGo'yu yakından tanıyın.">
 
-  <meta property="og:title" content="KittyGo – Tüm Özellikler ve Kullanım Kılavuzu">
-  <meta property="og:description" content="Gezi planı, ortak harcama takibi, tavsiyeler, üye rolleri ve daha fazlası — tek uygulamada, detaylı anlatımla.">
+  <meta property="og:title" content="KittyGo – Birlikte Gezmenin En Kolay Hali">
+  <meta property="og:description" content="Gezi planı, ortak harcama takibi, tavsiyeler ve daha fazlası tek uygulamada.">
   <meta property="og:image" content="https://vistavio.github.io/kittygo-landing/icon.png">
   <meta property="og:type" content="website">
 
   <link rel="icon" type="image/png" href="icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <section class="hero">
+  <nav class="topbar">
+    <div class="topbar-inner">
+      <a href="#top" class="brand">
+        <img src="icon.png" alt="" class="brand-icon">
+        <span>KittyGo</span>
+      </a>
+      <div class="topbar-links">
+        <a href="#plan">Plan</a>
+        <a href="#tavsiyeler">Tavsiyeler</a>
+        <a href="#harcamalar">Harcamalar</a>
+        <a href="#uyeler">Üyeler</a>
+        <a href="#daha-fazlasi">Daha Fazlası</a>
+      </div>
+      <a class="topbar-cta" href="https://play.google.com/store/apps/details?id=com.kittygo.app">İndir</a>
+    </div>
+  </nav>
+
+  <section class="hero" id="top">
     <div class="container">
       <img src="icon.png" alt="KittyGo" class="hero-icon">
-      <h1>KittyGo</h1>
-      <p class="slogan">Seyahatlerinizi birlikte planlayın</p>
+      <h1>Gezi grupları için<br>bir sığınak</h1>
+      <p class="slogan">Kim nereye gidecek, kim ne kadar harcadı, kim hangi oteli beğendi — hepsi tek yerde. KittyGo, arkadaş grubunuzun gezisini dağınıklıktan kurtarır.</p>
       <a class="btn-download" href="https://play.google.com/store/apps/details?id=com.kittygo.app">
         Play Store'dan İndir
       </a>
-      <p class="hero-note">Aşağıda uygulamanın tüm özelliklerini, adım adım nasıl kullanılacağıyla birlikte bulabilirsiniz.</p>
     </div>
   </section>
-
-  <nav class="toc" aria-label="Özellik listesi">
-    <div class="toc-scroll">
-      <a href="#plan">🗓️ Plan</a>
-      <a href="#tavsiyeler">💡 Tavsiyeler</a>
-      <a href="#harcamalar">💰 Harcamalar</a>
-      <a href="#uyeler">👥 Üyeler</a>
-      <a href="#biletler">🎫 Biletler</a>
-      <a href="#yapilacaklar">✅ Yapılacaklar</a>
-      <a href="#ai-asistan">🤖 AI Asistan</a>
-      <a href="#hava-durumu">☀️ Hava Durumu</a>
-      <a href="#para-cevirici">💱 Para Çevirici</a>
-      <a href="#yedekleme">☁️ Yedekleme</a>
-      <a href="#konum-paylasimi">📍 Konum Paylaşımı</a>
-      <a href="#ayarlar">⚙️ Ayarlar</a>
-    </div>
-  </nav>
 
   <section class="guide">
     <div class="container">
 
       <article class="feature-block" id="plan">
-        <div class="feature-header">
-          <div class="emoji">🗓️</div>
-          <h2>Plan</h2>
-        </div>
         <div class="feature-body">
           <div class="feature-text">
-            <p>Gezinizin gün gün programını tek bir zaman çizelgesinde oluşturun. Uçuş, transfer, konaklama, ziyaret, yemek, aktivite, gemi, tren, bilet ve serbest not — 10 farklı aktivite tipiyle programınızı detaylandırabilirsiniz.</p>
-            <ul>
-              <li>Gün seçici, cihazınızın o anki tarihine göre gezinin doğru gününü otomatik olarak ortalar — gezi devam ederken uygulamayı her açtığınızda elle kaydırmanıza gerek kalmaz.</li>
-              <li>Uçuş/otel gibi rezervasyon fotoğraflarını kamerayla tarayıp bilgileri (saat, havayolu, gece sayısı vb.) otomatik doldurabilirsiniz.</li>
-              <li>Aynı güzergahtaki transfer ve bir sonraki otel arasında Google Maps üzerinden yol tarifi/çevrimdışı harita indirme kısayolu sunar.</li>
-              <li>Bir aktiviteyi başka bir güne taşıyabilir veya Tavsiyeler bölümüne aktarabilirsiniz.</li>
-              <li>Her aktivite kartına doğrudan harcama ve bilet ekleyebilirsiniz — ayrı bir ekrana geçmenize gerek yok.</li>
-              <li>Aktiviteye bağlı saatte, o konum/şehir için anlık hava durumu simgesi gösterilir.</li>
-            </ul>
+            <span class="kicker">🗓️ Plan</span>
+            <h2>Gezinin tamamı, tek bir sayfada</h2>
+            <p>Uçuşlar, oteller, yemekler, ziyaret edilecek yerler... Hepsini gün gün sıralayın, herkes aynı programa baksın. Bilet ya da rezervasyon fotoğrafını çekin, KittyGo saati ve detayları kendisi doldursun — elle yazmakla uğraşmayın.</p>
+            <p>Bir aktiviteyi yanlış güne mi eklediniz? Sürükleyip taşımanıza bile gerek yok, birkaç dokunuşla başka güne alın. Beğendiğiniz bir yeri Tavsiyeler'e, ya da bir tavsiyeyi doğrudan plana aktarabilirsiniz.</p>
           </div>
           <div class="screenshot-placeholder"><!-- SCREENSHOT: plan -->Ekran görüntüsü eklenecek</div>
         </div>
       </article>
 
       <article class="feature-block alt" id="tavsiyeler">
-        <div class="feature-header">
-          <div class="emoji">💡</div>
-          <h2>Tavsiyeler</h2>
-        </div>
         <div class="feature-body">
           <div class="feature-text">
-            <p>Gezi arkadaşlarınızla mekan önerilerini, ipuçlarını ve keşiflerinizi paylaşın. Mekan, ipucu, aktivite ve uyarı kategorileriyle düzenleyin.</p>
-            <ul>
-              <li>Tavsiyeleri tarihe, puana veya beğeni sayısına göre sıralayabilir; gezi gününe göre filtreleyebilirsiniz.</li>
-              <li>Beğeni, yorum ve 5 yıldızlı puanlama ile paylaşımları değerlendirin.</li>
-              <li>Konum linki eklenmiş bir tavsiyeye dokunduğunuzda detay ekranından haritada açabilirsiniz.</li>
-              <li>Beğendiğiniz bir tavsiyeyi tek dokunuşla Plan'a, seçtiğiniz güne aktivite olarak ekleyebilirsiniz.</li>
-            </ul>
+            <span class="kicker">💡 Tavsiyeler</span>
+            <h2>"Şuraya mutlaka gidin" dediğiniz yer</h2>
+            <p>Gittiğiniz yerden bir kahve dükkanı, gizli bir manzara noktası ya da "bunu yapmayı unutmayın" dediğiniz bir ipucu keşfettiğinizde, gruba bırakın. Beğenip yorum yapabilir, en çok tutulanları puanlarına göre görebilirsiniz.</p>
           </div>
           <div class="screenshot-placeholder"><!-- SCREENSHOT: tavsiyeler -->Ekran görüntüsü eklenecek</div>
         </div>
       </article>
 
       <article class="feature-block" id="harcamalar">
-        <div class="feature-header">
-          <div class="emoji">💰</div>
-          <h2>Harcamalar</h2>
-        </div>
         <div class="feature-body">
           <div class="feature-text">
-            <p>Ortak, kişisel veya özel harcamalarınızı kaydedin — KittyGo kimin kime ne kadar borçlu olduğunu otomatik hesaplasın.</p>
-            <ul>
-              <li><strong>Ortak / Kişisel / Özel</strong> görünürlük etiketleriyle hangi harcamanın bölüşüme dahil olacağını siz belirlersiniz — sadece "Ortak" etiketli harcamalar bölüşüm hesabına girer.</li>
-              <li>Nakit/kart ödeme tipi, farklı para birimleri ve anlık kur çeviriyle harcama girin; fiş/makbuz fotoğrafını kamerayla tarayarak tutarı otomatik okutabilirsiniz.</li>
-              <li>Admin, bir üye adına harcama girebilir — "kim ödedi" ile "kim kaydetti" ayrı ayrı tutulur.</li>
-              <li><strong>Bölüşüm</strong> sekmesinde bireysel veya aile/grup bazında net bakiyeleri ve önerilen ödeme planını (kim kime, ne kadar) görürsünüz.</li>
-              <li>Üyeleri ailelere/gruplara ayırıp bölüşümü grup toplamları üzerinden de görüntüleyebilirsiniz.</li>
-              <li>Liste, özet ve kategori/kişi kırılımlı raporlarla harcamalarınızı analiz edin.</li>
-            </ul>
+            <span class="kicker">💰 Harcamalar</span>
+            <h2>"Kim kime ne kadar borçlu" hesabını unutun</h2>
+            <p>Ortak masrafları kaydedin, KittyGo bölüşümü sizin için hesaplasın. Bir harcamayı sadece kendinize mi saklamak istiyorsunuz, yoksa herkese mi bölünecek — siz seçersiniz. Fişi fotoğraflayın, tutar otomatik okunsun; farklı para biriminde ödediyseniz güncel kurla anında çevrilsin.</p>
+            <p>Gezi sonunda kimin kime ne kadar ödemesi gerektiğini tek bakışta gösteririz — ister kişi kişi, ister aile/grup bazında.</p>
           </div>
           <div class="screenshot-placeholder"><!-- SCREENSHOT: harcamalar -->Ekran görüntüsü eklenecek</div>
         </div>
       </article>
 
       <article class="feature-block alt" id="uyeler">
-        <div class="feature-header">
-          <div class="emoji">👥</div>
-          <h2>Üyeler ve Roller</h2>
-        </div>
         <div class="feature-body">
           <div class="feature-text">
-            <p>Davet linkiyle arkadaşlarınızı geziye ekleyin. Üyelik istekleri kurucunun (veya bir başka adminin) onayından geçer.</p>
-            <ul>
-              <li><strong>Kurucu (ilk admin):</strong> Geziyi oluşturan kişi — silinemez/değiştirilemez bir konuma sahiptir, diğer adminleri o atar.</li>
-              <li><strong>Admin:</strong> Kurucu, istediği üyeleri admin yapabilir. Adminler üyelik isteklerini onaylar/reddeder, harcama/plan/tavsiye içeriğini yönetir.</li>
-              <li><strong>Gözlemci:</strong> Programı takip edebilir, tavsiye ekleyip beğeni/yorum yapabilir — ama harcamaları ve yapılacaklar listesini göremez, plan/tavsiye içeriği oluşturamaz. Bir admin isterse gözlemciye plan kartlarındaki fiyat bilgisini görme izni de verebilir.</li>
-              <li>Bir katılım isteği geldiğinde, admin onaylarken kişiyi "Üye" veya "Gözlemci" olarak onaylamayı seçer.</li>
-              <li>Gözlemci istediği zaman bir admin tarafından normal üyeye terfi ettirilebilir.</li>
-            </ul>
+            <span class="kicker">👥 Üyeler</span>
+            <h2>Herkesi davet edin, kontrolü siz elinizde tutun</h2>
+            <p>Bir link paylaşarak arkadaşlarınızı geziye ekleyin. Kalabalık bir grubu tek başınıza yönetmek zorunda değilsiniz — güvendiğiniz kişileri admin yaparak yükü paylaşabilirsiniz.</p>
+            <p>Bazen gruba, harcamalara karışmadan sadece programı takip edecek biri de katılmak isteyebilir — mesela evde kalıp meraklanan bir aile büyüğü. Onları "gözlemci" olarak ekleyin: planı ve tavsiyeleri görürler, ama harcamalara dokunamaz, içerik ekleyemezler. İsterseniz sonradan onlara da tam yetki verebilirsiniz.</p>
           </div>
           <div class="screenshot-placeholder"><!-- SCREENSHOT: uyeler -->Ekran görüntüsü eklenecek</div>
         </div>
       </article>
 
-      <article class="feature-block" id="biletler">
-        <div class="feature-header">
-          <div class="emoji">🎫</div>
-          <h2>Biletlerim</h2>
+      <article class="feature-block" id="daha-fazlasi">
+        <div class="feature-header-plain">
+          <span class="kicker">✨ Daha Fazlası</span>
+          <h2>Gezerken işinize yarayacak küçük dokunuşlar</h2>
         </div>
-        <div class="feature-body">
-          <div class="feature-text">
-            <p>Uçak, tren, müze, konser gibi tüm biletlerinizi tek yerde, cihazınızda saklayın.</p>
-            <ul>
-              <li>Kamerayla fotoğraf çekip veya galeriden seçip kırparak bilet ekleyin.</li>
-              <li>Bilete isim ve not ekleyin, isterseniz ilgili plan aktivitesine bağlayın.</li>
-              <li>Biletleriniz cihazınızda saklanır — internet olmasa bile erişebilirsiniz.</li>
-            </ul>
+        <div class="mini-grid">
+          <div class="mini-card">
+            <div class="mini-emoji">🎫</div>
+            <h3>Biletlerim</h3>
+            <p>Uçak, tren, müze biletlerinizi tek yerde saklayın — internet olmasa bile açıp gösterebilirsiniz.</p>
           </div>
-          <div class="screenshot-placeholder"><!-- SCREENSHOT: biletler -->Ekran görüntüsü eklenecek</div>
-        </div>
-      </article>
-
-      <article class="feature-block alt" id="yapilacaklar">
-        <div class="feature-header">
-          <div class="emoji">✅</div>
-          <h2>Yapılacaklar Listesi</h2>
-        </div>
-        <div class="feature-body">
-          <div class="feature-text">
-            <p>Gezi öncesi hazırlıklarınız (vize, bavul, rezervasyon teyidi vb.) için tüm üyelerin ortaklaşa kullandığı paylaşımlı bir kontrol listesi.</p>
-            <ul>
-              <li>Herhangi bir üye madde ekleyebilir, işaretleyebilir veya silebilir — liste tamamen ortak.</li>
-              <li>Gözlemci üyeler bu listeyi göremez.</li>
-            </ul>
+          <div class="mini-card">
+            <div class="mini-emoji">✅</div>
+            <h3>Yapılacaklar</h3>
+            <p>Vize, bavul, rezervasyon teyidi — gezi öncesi hazırlıkları grupça takip edin.</p>
           </div>
-          <div class="screenshot-placeholder"><!-- SCREENSHOT: yapilacaklar -->Ekran görüntüsü eklenecek</div>
-        </div>
-      </article>
-
-      <article class="feature-block" id="ai-asistan">
-        <div class="feature-header">
-          <div class="emoji">🤖</div>
-          <h2>AI Asistan</h2>
-        </div>
-        <div class="feature-body">
-          <div class="feature-text">
-            <p>Gezi güzergahınıza özel hazır soru önerileriyle, tercih ettiğiniz yapay zeka uygulamasına (ör. ChatGPT, Gemini) tek dokunuşla soru sorun.</p>
-            <ul>
-              <li><strong>Destinasyon</strong>, <strong>Konum Bazlı</strong> (cihazınızın GPS konumunu kullanarak), <strong>Seyahat İpuçları</strong> ve <strong>Kültür & Dil</strong> kategorilerinde hazır sorular sunar.</li>
-              <li>Sorduğunuz soru, seçtiğiniz AI uygulaması otomatik açılarak oraya iletilir — KittyGo'nun kendi içinde bir sohbet motoru çalıştırmaz, sizi tercih ettiğiniz uygulamaya yönlendirir.</li>
-              <li>Hangi AI uygulamasının açılacağını Ayarlar'dan seçebilirsiniz.</li>
-            </ul>
+          <div class="mini-card">
+            <div class="mini-emoji">🤖</div>
+            <h3>AI Asistan</h3>
+            <p>"Burada yerel bir yemek nerede yenir?" gibi soruları, sevdiğiniz yapay zeka uygulamasına tek dokunuşla sorun.</p>
           </div>
-          <div class="screenshot-placeholder"><!-- SCREENSHOT: ai-asistan -->Ekran görüntüsü eklenecek</div>
-        </div>
-      </article>
-
-      <article class="feature-block alt" id="hava-durumu">
-        <div class="feature-header">
-          <div class="emoji">☀️</div>
-          <h2>Hava Durumu</h2>
-        </div>
-        <div class="feature-body">
-          <div class="feature-text">
-            <p>Gezi güzergahınızdaki hava durumunu, plan günlerinize göre önceden görün.</p>
-            <ul>
-              <li><strong>Gün</strong> sekmesinde seçili günün, <strong>Gezi</strong> sekmesinde tüm gezinin hava durumu özeti.</li>
-              <li>Plan'daki her aktivitenin saatine ve konumuna göre ayrı ayrı hava tahmini gösterilir.</li>
-            </ul>
+          <div class="mini-card">
+            <div class="mini-emoji">☀️</div>
+            <h3>Hava Durumu</h3>
+            <p>Gideceğiniz günlerin hava durumunu önceden görün, valizinizi ona göre hazırlayın.</p>
           </div>
-          <div class="screenshot-placeholder"><!-- SCREENSHOT: hava-durumu -->Ekran görüntüsü eklenecek</div>
-        </div>
-      </article>
-
-      <article class="feature-block" id="para-cevirici">
-        <div class="feature-header">
-          <div class="emoji">💱</div>
-          <h2>Para Çevirici</h2>
-        </div>
-        <div class="feature-body">
-          <div class="feature-text">
-            <p>Çoklu para birimi desteğiyle harcamalarınızı anında ana para biriminize çevirin, güncel kurlarla takip edin.</p>
-            <ul>
-              <li>Bir tutarı fotoğrafla tarayıp otomatik okutabilir, ardından istediğiniz para birimine çevirebilirsiniz.</li>
-              <li>Kurlar düzenli olarak güncellenir; son güncelleme zamanı ekranda gösterilir.</li>
-              <li>Harcama eklerken de aynı canlı kur otomatik uygulanır — ayrıca hesap yapmanıza gerek kalmaz.</li>
-            </ul>
+          <div class="mini-card">
+            <div class="mini-emoji">💱</div>
+            <h3>Para Çevirici</h3>
+            <p>Yabancı paradaki bir tutarı fotoğraflayın, güncel kurla anında ne kadar tuttuğunu görün.</p>
           </div>
-          <div class="screenshot-placeholder"><!-- SCREENSHOT: para-cevirici -->Ekran görüntüsü eklenecek</div>
-        </div>
-      </article>
-
-      <article class="feature-block alt" id="yedekleme">
-        <div class="feature-header">
-          <div class="emoji">☁️</div>
-          <h2>Yedekleme</h2>
-        </div>
-        <div class="feature-body">
-          <div class="feature-text">
-            <p>Gezi verilerinizi kaybetme endişesi yaşamayın.</p>
-            <ul>
-              <li>JSON veya PDF formatında, tek bir gezi ya da tüm gezileriniz için yedek alın.</li>
-              <li>Yedeği cihazınıza kaydedebilir veya Google Drive hesabınıza otomatik bağlayabilirsiniz.</li>
-              <li>Ayarlar'dan otomatik yedekleme açıp en son yedek tarihini takip edebilirsiniz.</li>
-            </ul>
+          <div class="mini-card">
+            <div class="mini-emoji">☁️</div>
+            <h3>Yedekleme</h3>
+            <p>Gezi verileriniz kaybolmasın diye Google Drive'a ya da cihazınıza yedek alın.</p>
           </div>
-          <div class="screenshot-placeholder"><!-- SCREENSHOT: yedekleme -->Ekran görüntüsü eklenecek</div>
-        </div>
-      </article>
-
-      <article class="feature-block" id="konum-paylasimi">
-        <div class="feature-header">
-          <div class="emoji">📍</div>
-          <h2>Konum Paylaşımı</h2>
-        </div>
-        <div class="feature-body">
-          <div class="feature-text">
-            <p>Google Maps veya başka bir uygulamadan paylaştığınız bir konumu, doğrudan KittyGo'ya aktarın.</p>
-            <ul>
-              <li>Paylaşılan konumu mevcut bir gezinize veya yeni bir geziye, Plan ya da Tavsiyeler kartı olarak ekleyebilirsiniz.</li>
-              <li>KittyGo, cihazınızın "paylaş" menüsünde bir hedef olarak görünür — tarayıcıdan/haritadan uygulamayı açmadan tek dokunuşla aktarım yapabilirsiniz.</li>
-            </ul>
+          <div class="mini-card">
+            <div class="mini-emoji">📍</div>
+            <h3>Konum Paylaşımı</h3>
+            <p>Haritalar'da beğendiğiniz bir yeri, doğrudan paylaş menüsünden geziye ekleyin.</p>
           </div>
-          <div class="screenshot-placeholder"><!-- SCREENSHOT: konum-paylasimi -->Ekran görüntüsü eklenecek</div>
-        </div>
-      </article>
-
-      <article class="feature-block alt" id="ayarlar">
-        <div class="feature-header">
-          <div class="emoji">⚙️</div>
-          <h2>Ayarlar</h2>
-        </div>
-        <div class="feature-body">
-          <div class="feature-text">
-            <p>Uygulamayı kendinize göre uyarlayın.</p>
-            <ul>
-              <li><strong>10 dil</strong> desteği (Türkçe, İngilizce, Almanca, Fransızca, Çince, İspanyolca, İtalyanca, Rusça, Japonca, Korece) — cihazınızın dili destekleniyorsa uygulama otomatik o dilde açılır, isterseniz elle değiştirebilirsiniz.</li>
-              <li>Açık/koyu/sistem tema seçimi.</li>
-              <li>Ana para biriminizi ve tercih ettiğiniz AI uygulamasını seçin.</li>
-              <li>Plan ve üye bildirimlerini açıp kapatın.</li>
-              <li>Google Drive bağlantısı ve otomatik yedekleme ayarları.</li>
-              <li>Gezi silme işlemini korumak için bir şifre belirleyin.</li>
-            </ul>
+          <div class="mini-card">
+            <div class="mini-emoji">⚙️</div>
+            <h3>Ayarlar</h3>
+            <p>10 dil, açık/koyu tema, ana para biriminiz — uygulama size göre şekillensin.</p>
           </div>
-          <div class="screenshot-placeholder"><!-- SCREENSHOT: ayarlar -->Ekran görüntüsü eklenecek</div>
         </div>
       </article>
 
